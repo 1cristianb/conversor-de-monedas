@@ -17,7 +17,7 @@ public class ConversorService {
         System.out.println("Base: " + moneda.base_code());
         System.out.println("Destino: " + moneda.target_code());
         System.out.println("Tasa de conversión: " + moneda.conversion_rate());
-        System.out.println("Monto convertido: " + moneda.conversion_result());
+        System.out.println("Monto convertido: " + moneda.conversion_result() +" "+ moneda.target_code());
     }
 
     private void validarEntradas(String monedaEntrada, String monedaSalida, double monto) {
