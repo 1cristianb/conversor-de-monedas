@@ -14,10 +14,9 @@ public class ConversorService {
     public void convertirMoneda(String monedaEntrada, String monedaSalida, double monto) {
         validarEntradas(monedaEntrada, monedaSalida, monto);
         Moneda moneda = apiConversor.consultarConversion(monedaEntrada, monedaSalida, monto);
-        System.out.println("Base: " + moneda.base_code());
-        System.out.println("Destino: " + moneda.target_code());
+        System.out.println("\n=== Resultado ===");
         System.out.println("Tasa de conversión: " + moneda.conversion_rate());
-        System.out.println("Monto convertido: " + moneda.conversion_result() +" "+ moneda.target_code());
+        System.out.println("El valor " + monto+" "+moneda.base_code()+" corresponde al valor final de =>>>"+moneda.conversion_result()+" "+moneda.target_code() );
     }
 
     private void validarEntradas(String monedaEntrada, String monedaSalida, double monto) {

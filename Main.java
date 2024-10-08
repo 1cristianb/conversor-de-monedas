@@ -17,11 +17,15 @@ public class Main {
             System.out.println("2. Peso Argentino (ARS) => Dólar (USD)");
             System.out.println("3. Dólar (USD) => Real Brasileño (BRL)");
             System.out.println("4. Real Brasileño (BRL) => Dólar (USD)");
-            System.out.println("5. Salir");
+            System.out.println("5. Dólar (USD) => Peso colombiano (COP)");
+            System.out.println("6. Peso colombiano (COP) => Dólar (USD)");
+            System.out.println("7. Dólar (USD) => Peso chileno (CLP)");
+            System.out.println("8. Peso chileno (CLP) => Dólar (USD)");
+            System.out.println("9. Salir");
             System.out.print("Opción: ");
             int opcion = scanner.nextInt();
 
-            if (opcion == 5) {
+            if (opcion == 9) {
                 System.out.println("Saliendo del programa...");
                 break;
             }
@@ -44,6 +48,22 @@ public class Main {
                     break;
                 case 4:
                     monedaEntrada = "BRL";
+                    monedaSalida = "USD";
+                    break;
+                case 5:
+                    monedaEntrada = "USD";
+                    monedaSalida = "COP";
+                    break;
+                case 6:
+                    monedaEntrada = "COP";
+                    monedaSalida = "USD";
+                    break;
+                case 7:
+                    monedaEntrada = "USD";
+                    monedaSalida = "CLP";
+                    break;
+                case 8:
+                    monedaEntrada = "CLP";
                     monedaSalida = "USD";
                     break;
                 default:
