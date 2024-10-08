@@ -43,8 +43,8 @@ El proyecto sigue una arquitectura basada en servicios, con las siguientes carpe
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/1cristianb/conversor-monedas.git
-cd conversor-monedas
+git clone https://github.com/1cristianb/conversor-de-monedas.git
+cd conversor-de-monedas
 ```
 Configurar la API Key
 - Debes tener una API Key válida de ExchangeRate-API.
