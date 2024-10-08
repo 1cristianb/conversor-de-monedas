@@ -21,11 +21,13 @@ public class Main {
             System.out.println("6. Peso colombiano (COP) => Dólar (USD)");
             System.out.println("7. Dólar (USD) => Peso chileno (CLP)");
             System.out.println("8. Peso chileno (CLP) => Dólar (USD)");
-            System.out.println("9. Salir");
+            System.out.println("===============");
+            System.out.println("9. Historial de conversiones");
+            System.out.println("10. Salir");
             System.out.print("Opción: ");
             int opcion = scanner.nextInt();
 
-            if (opcion == 9) {
+            if (opcion == 10) {
                 System.out.println("Saliendo del programa...");
                 break;
             }
@@ -66,6 +68,9 @@ public class Main {
                     monedaEntrada = "CLP";
                     monedaSalida = "USD";
                     break;
+                case 9:
+                    conversorService.mostrarHistorial();
+                    continue;
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
                     continue;
